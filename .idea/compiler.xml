@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="movi-catalog-service.main" target="26" />
+      <module name="movi-catalog-service.test" target="26" />
+    </bytecodeTargetLevel>
+  </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="movi-catalog-service.main" options="-parameters" />
       <module name="movi-catalog-service.test" options="-parameters" />
       <module name="movie-catalog-service" options="-parameters" />
+      <module name="movie-catalog-service.main" options="-parameters" />
+      <module name="movie-catalog-service.test" options="-parameters" />
       <module name="service-registry" options="-parameters" />
       <module name="service-registry.main" options="-parameters" />
       <module name="service-registry.test" options="-parameters" />
