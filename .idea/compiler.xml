@@ -12,6 +12,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="api-gateway.main" options="-parameters" />
+      <module name="api-gateway.test" options="-parameters" />
       <module name="movi-catalog-service.main" options="-parameters" />
       <module name="movi-catalog-service.test" options="-parameters" />
       <module name="movie-catalog-service" options="-parameters" />
