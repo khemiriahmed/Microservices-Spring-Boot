@@ -23,11 +23,11 @@ public class MovieInfoController {
         return repository.findAll();
     }
 
-  /*  @GetMapping("/movie-info/find-path-by-id/{movieInfoId}")
+    @GetMapping("/movie-info/find-path-by-id/{movieInfoId}")
     public String findPathById(@PathVariable Long movieInfoId) {
         var videoInfoOptional = repository.findById(movieInfoId);
         return videoInfoOptional.map(MovieInfo::getPath).orElse(null);
     }
-    */
+
 
 }
