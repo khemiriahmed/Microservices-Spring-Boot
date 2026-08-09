@@ -4,6 +4,10 @@
     <bytecodeTargetLevel>
       <module name="movi-catalog-service.main" target="26" />
       <module name="movi-catalog-service.test" target="26" />
+      <module name="movie-catalog-service_main" target="21" />
+      <module name="movie-catalog-service_test" target="21" />
+      <module name="service-registry_main" target="21" />
+      <module name="service-registry_test" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -13,9 +17,16 @@
       <module name="movie-catalog-service" options="-parameters" />
       <module name="movie-catalog-service.main" options="-parameters" />
       <module name="movie-catalog-service.test" options="-parameters" />
+      <module name="movie-catalog-service_main" options="-parameters" />
+      <module name="movie-catalog-service_test" options="-parameters" />
+      <module name="movie-streaming-service" options="-parameters" />
+      <module name="movie-streaming-service.main" options="-parameters" />
+      <module name="movie-streaming-service.test" options="-parameters" />
       <module name="service-registry" options="-parameters" />
       <module name="service-registry.main" options="-parameters" />
       <module name="service-registry.test" options="-parameters" />
+      <module name="service-registry_main" options="-parameters" />
+      <module name="service-registry_test" options="-parameters" />
     </option>
   </component>
 </project>
