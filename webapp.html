@@ -93,8 +93,8 @@
                         card.style.backgroundImage = `url(${thumbnail})`;
                     };
 
-                    videoElement.src = `http://localhost:8091/stream/with-id/${video.id}`;
-                    videoElement.poster = `http://localhost:8091/stream/with-id/${video.id}`;
+                    videoElement.src = `http://localhost:8080/stream/with-id/${video.id}`;
+                    videoElement.poster = `http://localhost:8080/stream/with-id/${video.id}`;
 
                     const description = document.createElement('div');
                     description.classList.add('card-description');
