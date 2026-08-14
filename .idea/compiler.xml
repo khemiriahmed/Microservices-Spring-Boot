@@ -15,6 +15,9 @@
       <module name="api-gateway" options="-parameters" />
       <module name="api-gateway.main" options="-parameters" />
       <module name="api-gateway.test" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="config-server.main" options="-parameters" />
+      <module name="config-server.test" options="-parameters" />
       <module name="movi-catalog-service.main" options="-parameters" />
       <module name="movi-catalog-service.test" options="-parameters" />
       <module name="movie-catalog-service" options="-parameters" />
