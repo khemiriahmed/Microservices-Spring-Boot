@@ -29,5 +29,4 @@ public class MovieInfoController {
         return videoInfoOptional.map(MovieInfo::getPath).orElse(null);
     }
 
-
 }
