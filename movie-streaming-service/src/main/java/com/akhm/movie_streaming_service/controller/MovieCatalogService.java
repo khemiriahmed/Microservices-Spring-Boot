@@ -14,7 +14,8 @@ public class MovieCatalogService {
     private RestTemplate restTemplate;
 
     public String getMoviePath(Long movieInfoId) {
-        var response = restTemplate.getForEntity(CATALOG_SERVICE + "/movie-info/find-path-by-id/{movieInfoId}", String.class, movieInfoId);
+        var response = restTemplate.getForEntity(CATALOG_SERVICE + "/movie-info/find-path-by-id/{movieInfoId}",
+                String.class, movieInfoId);
         return response.getBody();
     }
 }
