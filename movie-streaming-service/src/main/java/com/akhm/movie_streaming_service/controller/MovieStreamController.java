@@ -18,14 +18,15 @@ import java.util.logging.Logger;
 public class MovieStreamController {
 
     public static final Logger log = Logger.getLogger(MovieStreamController.class.getName());
-    //public static final String VIDEO_DIRECTORY = "F:\\Stream\\";
+    // public static final String VIDEO_DIRECTORY = "F:\\Stream\\";
     public static final String VIDEO_DIRECTORY = "D:\\stream\\";
 
     @Autowired
     private MovieCatalogService movieCatalogService;
 
     @GetMapping("/stream/{videoPath}")
-    public ResponseEntity<InputStreamResource> streamVideo(@PathVariable String videoPath) throws FileNotFoundException {
+    public ResponseEntity<InputStreamResource> streamVideo(@PathVariable String videoPath)
+            throws FileNotFoundException {
         File file = new File(VIDEO_DIRECTORY + videoPath);
         if (file.exists()) {
             InputStreamResource inputStreamResource = new InputStreamResource(new FileInputStream(file));
@@ -38,7 +39,8 @@ public class MovieStreamController {
     }
 
     @GetMapping("/stream/with-id/{videoInfoId}")
-    public ResponseEntity<InputStreamResource> streamVideoById(@PathVariable Long videoInfoId) throws FileNotFoundException {
+    public ResponseEntity<InputStreamResource> streamVideoById(@PathVariable Long videoInfoId)
+            throws FileNotFoundException {
         String moviePath = movieCatalogService.getMoviePath(videoInfoId);
         log.log(Level.INFO, "Resolved movie path = {0}", moviePath);
         return streamVideo(moviePath);
